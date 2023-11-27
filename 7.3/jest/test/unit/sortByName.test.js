@@ -15,7 +15,7 @@ describe("Books names test suit", () => {
     ]);
   });
 
-  it("No sorting", () => {
+it("No sorting", () => {
     expect(
       sorting.sortByName(["Гарри Поттер", "Властелин Колец", "Гарри Поттер"])
     ).toEqual(["Властелин Колец", "Гарри Поттер", "Гарри Поттер"]);
