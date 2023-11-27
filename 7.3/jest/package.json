@@ -5,19 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage",
-    "eslint": "eslint",
-    "prettier": "prettier"
+    "coverage": "jest --collectCoverage"
   },
-  "collectCoverageFrom": [
-    "**/*.{js,jsx}",
-    "!**/node_modules/**",
-    "!**/vendor/**"
-  ],
-  "coverageThreshold": {
-    "branches": 100,
-    "functions": 100,
-    "lines": 100
+  "coverage": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   },
   "keywords": [
     "jest",

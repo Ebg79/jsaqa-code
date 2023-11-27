@@ -1,6 +1,7 @@
 # Dependency directories
 node_modules
 jspm_packages
+coverage
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
